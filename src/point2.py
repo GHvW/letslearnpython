@@ -13,4 +13,4 @@ def distance_to(p1: Coordinate, p2: Coordinate) -> float:
 
 
 # partial application
-distance_to_origin: Callable[[Tuple[float, float]], float] = partial(distance_to, (0, 0))
+distance_to_origin: Callable[[Coordinate], float] = partial(distance_to, (0, 0))
