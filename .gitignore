@@ -1,0 +1,8 @@
+
+.vs
+.vscode
+.idea
+.metals
+.ionide
+__pycache__
+/llp-env
