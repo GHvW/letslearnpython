@@ -6,6 +6,12 @@ class Point():
         self.x = x
         self.y = y
 
+    # equality
+    def __eq__(self, o: object) -> bool:
+        if isinstance(o, Point):
+            return (self.x == o.x) and (self.y == o.y)
+        return False
+
     def distance_to(self, other: "Point") -> float:
         return math.sqrt(
             (self.x - other.x) ** 2 + 
