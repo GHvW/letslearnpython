@@ -1,6 +1,6 @@
 
 
-# tuple
+# tuple - immutable
 stuff = ("hello world!", 42, 99.9)
 
 # list
