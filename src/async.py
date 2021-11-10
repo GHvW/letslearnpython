@@ -3,12 +3,15 @@ import asyncio
 from json import loads
 import sys
 
+
 async def get_dad_joke() -> str:
     async with aiohttp.ClientSession() as session:
         async with session.get("https://icanhazdadjoke.com/", headers={"Accept": "application/json"}) as response:
+
             json = await response.text()
+
             result = loads(json)
-            # print(result["joke"])
+
             return result["joke"]
 
 

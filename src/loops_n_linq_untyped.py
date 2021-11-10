@@ -1,16 +1,17 @@
+# type: ignore
 from typing import Generator, List
 from itertools import islice
 from function import add10, is_even
 
 
-def forloopyrange(start: int, end: int) -> Generator[int, None, None]:
+def forloopyrange(start, end):
     for it in range(start, end):
         if (is_even(it)):
             yield add10(it)
 
 
 # very SQL
-def expressionrange(start: int, end: int) -> Generator[int, None, None]:
+def expressionrange(start, end):
     return (add10(it) for it in range(start, end) if is_even(it))
 
 
@@ -22,5 +23,5 @@ print(take_3_tolist)
 print(take_5_tolist)
 
 
-def tolist_shortcut(start: int, end: int) -> List[int]:
+def tolist_shortcut(start, end):
     return [add10(it) for it in range(start, end) if is_even(it)]
