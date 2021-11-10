@@ -19,7 +19,7 @@ public static class Function
             return "Hello";
         }
     }
-    
+
     public static bool IsEven(int it) => it % 2 == 0;
 
     public static int Add(int x, int y) => x + y;

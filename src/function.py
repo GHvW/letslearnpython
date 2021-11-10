@@ -22,3 +22,5 @@ def add(x: int, y: int) -> int:
 
 add10: Callable[[int], int] = partial(add, 10)
 
+print(add10(100))
+print(is_even(102))
