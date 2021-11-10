@@ -24,5 +24,5 @@ public static class Function
 
     public static int Add(int x, int y) => x + y;
 
-    public static int Add10(int x) => Add(x, 10);
+    public static Func<int, int> Add10 = (int x) => Add(x, 10);
 }

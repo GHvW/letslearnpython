@@ -4,8 +4,8 @@ import math
 # class syntax
 class Point():
     def __init__(self, x, y):
-        self.x = x
-        self.y = y
+        self.__x = x
+        self.__y = y
 
     # equality
     def __eq__(self, o: object):
@@ -17,5 +17,4 @@ class Point():
         return math.sqrt(
             (self.x - other.x) ** 2 + 
             (self.y - other.y) ** 2)
-
 

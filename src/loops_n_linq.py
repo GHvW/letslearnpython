@@ -11,7 +11,9 @@ def forloopyrange(start: int, end: int) -> Generator[int, None, None]:
 
 # very SQL
 def expressionrange(start: int, end: int) -> Generator[int, None, None]:
-    return (add10(it) for it in range(start, end) if is_even(it))
+    return (add10(it) 
+    for it in range(start, end) 
+    if is_even(it))
 
 
 take_3_tolist = list(islice(forloopyrange(0, 20), 3))

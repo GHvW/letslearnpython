@@ -11,6 +11,7 @@ def generate_greeting(kind):
         return ""
     else:
         return "Hello"
+    return 1
 
 
 def is_even(it):
@@ -28,3 +29,12 @@ result2 = is_even(102)
 
 print(result1)
 print(result2)
+
+
+x = 10
+y = 20
+
+def addem():
+    return x + y
+
+print(addem())
