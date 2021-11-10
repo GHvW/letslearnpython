@@ -12,8 +12,7 @@ public static class LoopsNLinq
     }
 
     public static IEnumerable<int> Expressionrange(int start, int end) =>
-        Enumerable
-            .Range(start, end - start)
+        Forloopyrange(start, end)
             .Where(Function.IsEven)
             .Select(Function.Add10);
 }

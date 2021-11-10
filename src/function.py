@@ -1,6 +1,7 @@
 from typing import Callable
 from functools import partial
 
+
 def generate_greeting(kind: str) -> str:
     if kind == "Texan":
         return "Howdy!"
@@ -26,5 +27,3 @@ add10: Callable[[int], int] = partial(add, 10)
 
 print(add10(100))
 print(is_even(102))
-
-
