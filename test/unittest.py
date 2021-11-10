@@ -1,5 +1,5 @@
 import unittest
-from src.loops_n_linq import add, is_even
+from src.function import add, is_even
 
 
 class TestEm(unittest.TestCase):
