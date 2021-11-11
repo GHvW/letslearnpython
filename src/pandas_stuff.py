@@ -4,10 +4,6 @@ import pandas as pd
 
 data = pd.read_csv("C:\\Users\\ghvw\\projects\\datasets\\Marvel_Comics.csv")
 
-# print(data.head())
-
-# data = data.query('"penciler" == "Jack Kirby"')
-
 
 # statistics
 # print(data.describe())
@@ -19,12 +15,18 @@ data = pd.read_csv("C:\\Users\\ghvw\\projects\\datasets\\Marvel_Comics.csv")
 # print(data.iloc[9])
 # print(data.iloc[2:9])
 
+# create a non-numerical index in the dataframe
 data = data.set_index(data["penciler"])
 
 # print(data.loc["Jack Kirby"])
 
-# filtering?
+
+# filtering
 #print(data[data["penciler"] == "Jack Kirby"].sample())
 
 print(data[(data["penciler"] == "Jack Kirby") &
       (data["comic_name"].str.contains("Captain"))].head())
+
+
+# renaming
+# data["comic_name"].
